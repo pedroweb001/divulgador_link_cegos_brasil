@@ -45,12 +45,15 @@ def mistura_e_copia(titulo, link):
 		leia_arquivo = arquivo.read()
 		linhas = list(map(str, leia_arquivo.split('\n')))
 		mensagem_sorteada = random.choice(linhas)
+	m = "Confira nesse link:";
 	print(mensagem_sorteada)
 	print()
 	print(titulo)
 	print()
+	print(m)
+	print()
 	print(link)
-	tudo_certo1 = mensagem_sorteada + "\n" + titulo + "\n" + link
+	tudo_certo1 = mensagem_sorteada + "\n" + titulo + "\n" +m + "\n" + link
 	pedroian.copy(tudo_certo1)
 	print("Conteúdo copiado para área de transferência com sucesso!")
 	verifica_sair()
